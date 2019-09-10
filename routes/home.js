@@ -6,6 +6,7 @@ router.get('/', async (ctx, next) => {
   let banner = await BannerService.getList();
   let company = await CompanyService.getList();
   console.log(JSON.stringify(company),'company')
+  const province = require("../public/javascripts/city");
   await ctx.render('index', {
     title: [
       {
@@ -23,12 +24,26 @@ router.get('/', async (ctx, next) => {
         child: [1, 2, 3, 4, 5, 6]
       }, {
         h2: "免费计算",
-        h5: "10秒计算出您的装修预算，让装修更轻松",
-        child: [1]
+        h5: "10秒计算出您的装修预算，让装修更轻松"
       }
     ],
-    list: banner.list
+    list: banner.list,
+    province:JSON.stringify(province),
   })
+})
+
+router.get('company', async (ctx, next) => {
+  await ctx.render('company')
+})
+router.get('design', async (ctx, next) => {
+  await ctx.render('design')
+})
+router.get('bbs', async (ctx, next) => {
+  await ctx.render('bbs')
+})
+
+router.get('service', async (ctx, next) => {
+  await ctx.render('company')
 })
 
 module.exports = router;

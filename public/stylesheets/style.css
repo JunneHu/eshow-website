@@ -16,6 +16,14 @@
    background: #f8f8f8;
  }
 
+ .font-clamp3 {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
+ }
+
  /*垂直居中*/
 
  .align-items {
@@ -151,8 +159,8 @@
 
  .home-content .content-1 li .name {
    text-align: center;
-   font-size: 14px;
-   color: #333;
+   font-size: 16px;
+   color: #4f3528;
  }
 
  .home-content .content-2 {
@@ -214,19 +222,96 @@
 
  .home-content .content-3 li .img {
    flex: 1;
-   height: 180px;
+   height: 150px;
  }
 
  .home-content .content-3 li .img img {
    width: 270px;
-   height: 180px;
+   height: 150px;
    background: #f8f8f8;
  }
 
  .home-content .content-3 li .info {
    flex: 1;
-   height: 180px;
+   height: 150px;
+   padding-right: 20px;
  }
- .home-content .content-3 li .info .name{
-   
+
+ .home-content .content-3 li .info .name {
+   font-size: 16px;
+   color: #4f3528;
+   margin-bottom: 20px;
  }
+
+ .home-content .content-3 li .info .content {
+   font-size: 14px;
+   color: #999;
+   margin-bottom: 20px;
+   line-height: 23px;
+ }
+
+ .home-content .content-3 li .layui-icon {
+   font-size: 18px;
+   margin-right: 20px;
+   color: #999;
+ }
+
+ .home-content .layui-form {
+   display: flex;
+   padding-bottom: 40px;
+ }
+
+ .home-content .content-4 .left {
+   flex: 5;
+ }
+
+ .home-content .content-4 .center {
+   flex: 2;
+   text-align: center;
+ }
+
+ .home-content .content-4 .center .layui-btn{
+    width: 130px;
+    height: 130px;
+    background: url("/images/btn-bg.png") no-repeat;
+    margin-top: 30px;
+  }
+ .home-content .content-4 .right {
+   flex: 3;
+   text-align: center;
+ }
+ .home-content .content-4 .right h2 {
+  font-size: 18px;
+  color: #4f3528;
+  margin-bottom: 20px;
+}
+.home-content .content-4 .right h2 strong {
+  font-size: 28px;
+  color: #ff6d15;
+  padding: 0 10px;
+}
+.home-content .content-4 .right .item{
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+}
+.home-content .content-4 .right .item strong {
+  font-size: 16px;
+  color: #ff6d15;
+  padding: 0 6px;
+}
+.hui-footer{
+  background: #959595;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color:#fff;
+}
+
+.black-bg{
+  text-align: center;
+  min-height: 500px;
+  line-height: 500px;
+  font-size: 14px;
+  color: #999;
+}

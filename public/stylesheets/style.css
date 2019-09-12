@@ -40,6 +40,7 @@
  .hui-header {
    height: 80px;
    line-height: 80px;
+   border-bottom: 1px solid #efefef;
  }
 
  .hui-header .hui-container {
@@ -270,48 +271,296 @@
    text-align: center;
  }
 
- .home-content .content-4 .center .layui-btn{
-    width: 130px;
-    height: 130px;
-    background: url("/images/btn-bg.png") no-repeat;
-    margin-top: 30px;
-  }
+ .home-content .content-4 .center .layui-btn {
+   width: 130px;
+   height: 130px;
+   background: url("/images/btn-bg.png") no-repeat;
+   margin-top: 30px;
+ }
+
  .home-content .content-4 .right {
    flex: 3;
    text-align: center;
  }
+
  .home-content .content-4 .right h2 {
-  font-size: 18px;
-  color: #4f3528;
-  margin-bottom: 20px;
-}
-.home-content .content-4 .right h2 strong {
-  font-size: 28px;
-  color: #ff6d15;
-  padding: 0 10px;
-}
-.home-content .content-4 .right .item{
+   font-size: 18px;
+   color: #4f3528;
+   margin-bottom: 20px;
+ }
+
+ .home-content .content-4 .right h2 strong {
+   font-size: 28px;
+   color: #ff6d15;
+   padding: 0 10px;
+ }
+
+ .home-content .content-4 .right .item {
+   font-size: 14px;
+   color: #666;
+   line-height: 30px;
+ }
+
+ .home-content .content-4 .right .item strong {
+   font-size: 16px;
+   color: #ff6d15;
+   padding: 0 6px;
+ }
+
+ .hui-footer {
+   background: #959595;
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+   color: #fff;
+ }
+
+ .black-bg {
+   text-align: center;
+   min-height: 500px;
+   line-height: 500px;
+   font-size: 14px;
+   color: #999;
+ }
+
+ /* company */
+
+ .company-bg {
+   display: flex;
+   margin: 50px auto;
+ }
+
+ .company-bg .hui-left {
+   flex: 3;
+   padding-right: 30px;
+ }
+
+ .company-bg .hui-right {
+   flex: 1;
+ }
+
+ .company-bg .hui-right li {
+   line-height: 40px;
+ }
+
+ .company-bg .hui-right li span {
+   display: inline-block;
+   margin-right: 15px;
+   width: 20px;
+   height: 20px;
+   background: #eee;
+   line-height: 20px;
+   text-align: center;
+   border-radius: 2px;
+ }
+
+ .company-bg .hui-right li:nth-child(1) span,
+ .company-bg .hui-right li:nth-child(2) span,
+ .company-bg .hui-right li:nth-child(3) span {
+   background: #FF5722;
+   color: #fff;
+ }
+
+ .company-bg .hui-left ul li {
+   display: flex;
+   margin-bottom: 30px;
+ }
+
+ .company-bg .hui-left ul li .c-img {
+   width: 80px;
+   height: 80px;
+   margin-right: 40px;
+   border-radius: 100%;
+ }
+
+ .company-bg .hui-left ul li .c-img img {
+   max-width: 100%;
+ }
+
+ .company-bg .hui-left ul li .c-info {
+   width: 750px;
+ }
+
+ .company-bg .hui-left ul li .c-info .c-top {
+   display: flex;
+ }
+
+ .company-bg .hui-left ul li .c-info .c-top .c-left {
+   flex: 5;
+ }
+
+ .company-bg .hui-left ul li .c-info .c-top .c-left h1 {
+   font-size: 28px;
+   color: #4f3528;
+   line-height: 50px;
+ }
+
+ .company-bg .hui-left ul li .c-info .c-top .c-left .hui-row {
+   display: flex;
+   margin-bottom: 30px;
+ }
+
+ .company-bg .hui-left ul li .c-info .c-top .c-left .hui-row span {
+   padding-right: 20px;
+   color: #999;
+   line-height: 30px;
+ }
+
+ .company-bg .hui-left ul li .c-info .c-top .c-right {
+   flex: 1;
+   padding-top: 20px;
+ }
+
+ .company-bg .hui-left ul li .c-info .c-bottom {
+   display: flex;
+ }
+
+ .company-bg .hui-left ul li .c-info .c-bottom .c-item {
+   width: 170px;
+   height: 110px;
+   margin-right: 20px;
+ }
+
+ .company-bg .hui-left ul li .c-info .c-bottom .c-item img {
+   width: 170px;
+   height: 110px;
+   border-radius: 5px;
+ }
+
+ .design-bg {
+   margin: 40px auto;
+ }
+
+ .design-bg .de-top ul {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+ }
+
+ .design-bg .de-top ul li {
+   width: 380px;
+   height: 150px;
+ }
+
+ .design-bg .de-top ul li img {
+   width: 100%;
+   height: 150px;
+   border-radius: 4px;
+ }
+
+ .design-bg .de-bottom {
+   overflow: hidden;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+
+ .design-bg .de-bottom .item {
+   width: 290px;
+   border: 1px solid #eee;
+   margin-bottom: 20px;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+ .design-bg .de-bottom .item img {
+   border-radius: 4px 4px 0 0;
+   background: #ccc;
+   width: 100%;
+   height: 180px;
+ }
+
+ .design-bg .de-bottom .item .de-title {
+   line-height: 50px;
+   display: flex;
+   padding: 0 15px;
+   justify-content: space-between;
+   color: #333;
+ }
+
+ .design-bg .de-bottom .item .de-title .num {
+   color: #999;
+ }
+
+ .bbs-bg {
+   margin: 40px auto;
+ }
+
+ .bbs-bg .bbs-top {
+   margin-bottom: 30px;
+ }
+
+ .bbs-bg .bbs-top ul {
+   display: flex;
+ }
+
+ .bbs-bg .bbs-top ul li {
+   display: inline-block;
+   margin-right: 30px;
+   color: #333;
+   line-height: 35px;
+   font-size: 16px;
+   cursor: pointer;
+ }
+
+ .bbs-bg .bbs-bottom {}
+
+ .bbs-bg .bbs-bottom .item {
+   margin-bottom: 30px;
+ }
+
+ .bbs-bg .bbs-bottom .item h1 {
+   font-size: 16px;
+   color: #333;
+   cursor: pointer;
+ }
+
+ .bbs-bg .bbs-bottom .item .user-info {
+   line-height: 50px;
+   color: #999;
+ }
+
+ .bbs-bg .bbs-bottom .item .bbs-con {
+   display: flex;
+ }
+
+ .bbs-bg .bbs-bottom .item .bbs-con .bbs-left {
+   flex: 1;
+ }
+
+ .bbs-bg .bbs-bottom .item .bbs-con .bbs-left img {
+   width: 100%;
+   height: 180px;
+   border-radius: 5px;
+ }
+
+ .bbs-bg .bbs-bottom .item .bbs-con .bbs-right {
+   flex: 3;
+   padding-left: 30px;
+   line-height: 25px;
+   color: #666;
+ }
+
+ .service-bg {
+   margin: 40px auto;
+ }
+
+ .service-bg h1 {
+   text-align: center;
+   font-size: 18px;
+   color: #333;
+   margin-bottom: 30px;
+ }
+ .service-bg ul li{
+   margin-bottom: 30px;
+ }
+ .service-bg ul li h3{
+   font-size: 16px;
+   color: #333;
+   line-height: 50px;
+ }
+ .service-bg ul li h5{
   font-size: 14px;
   color: #666;
   line-height: 30px;
-}
-.home-content .content-4 .right .item strong {
-  font-size: 16px;
-  color: #ff6d15;
-  padding: 0 6px;
-}
-.hui-footer{
-  background: #959595;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color:#fff;
-}
-
-.black-bg{
-  text-align: center;
-  min-height: 500px;
-  line-height: 500px;
-  font-size: 14px;
-  color: #999;
 }

@@ -1,5 +1,55 @@
 <%include header.ejs%>
-  <div class="black-bg">
-    维护中，请稍后...
+  <div class="hui-container">
+    <div class="company-bg">
+      <div class="hui-left">
+        <ul>
+          <% for(var i in company){ %>
+            <li>
+              <div class="c-img">
+                <img src="<%= company[i].logo %>" />
+              </div>
+              <div class="c-info">
+                <div class="c-top">
+                  <div class="c-left">
+                    <h1>
+                      <%= company[i].name %>
+                    </h1>
+                    <div class="hui-row">
+                      <span>设计案例：
+                        <%= company[i].num || 0 %>
+                      </span>
+                      <span>装修案例：
+                        <%= company[i].num || 0 %>
+                      </span>
+                      <span>口碑：
+                        <%= company[i].num || 0 %>分</span>
+                    </div>
+                  </div>
+                  <div class="c-right">
+                    <button type="button" class="layui-btn layui-btn-danger">联系商家</button>
+                  </div>
+                </div>
+                <div class="c-bottom">
+                  <% for(var j in company[i].imgs){ %>
+                    <% if(company[i].imgs[j]){ %>
+                      <div class="c-item">
+                        <img src="<%= company[i].imgs[j] %>" />
+                      </div>
+                      <% } %>
+                        <% } %>
+                </div>
+              </div>
+            </li>
+            <% } %>
+        </ul>
+      </div>
+      <div class="hui-right">
+        <ul>
+          <% for(var i in company){ %>
+            <li><span><%= Number(i)+1 %></span><%= company[i].name %></li>
+            <% } %>
+        </ul>
+      </div>
+    </div>
   </div>
-<%include footer.ejs%>
+  <%include footer.ejs%>

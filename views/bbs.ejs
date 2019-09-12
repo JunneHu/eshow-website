@@ -1,5 +1,36 @@
 <%include header.ejs%>
-<div class="black-bg">
-    维护中，请稍后...
+  <div class="hui-container">
+    <div class="bbs-bg">
+      <div class="bbs-top">
+        <ul>
+          <li>分类1</li>
+          <li>分类2</li>
+          <li>分类3</li>
+          <li>分类4</li>
+          <li>分类1</li>
+          <li>分类2</li>
+          <li>分类3</li>
+          <li>分类4</li>
+        </ul>
+      </div>
+      <div class="bbs-bottom">
+        <% for(var i in list){ %>
+          <div class="item">
+            <h1>超有创意的旅拍照！今年中秋就流行这样拍</h1>
+            <div class="user-info">
+              <i class="layui-icon layui-icon-username"></i>&nbsp;&nbsp;Junney
+            </div>
+            <div class="bbs-con">
+              <div class="bbs-left">
+                <img src="/images/banner.png" />
+              </div>
+              <div class="bbs-right">
+                中秋假期即将来临 相信大多数人都有出游计划 难得出一次远门 肯定得拍些美照记录快乐的时光了 但在看腻了千篇一律的景点打卡照后 这次我们就要来点不一样的 谁说旅游只能拍浪漫唯美照呢？
+              </div>
+            </div>
+          </div>
+          <% } %>
+      </div>
+    </div>
   </div>
-<%include footer.ejs%>
+  <%include footer.ejs%>

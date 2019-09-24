@@ -39,8 +39,8 @@ const operatorsAliases = {
     $col: Op.col
 };
 
-const sequelize = new Sequelize("eshow-website", "root", "123456", {
-    host: "localhost",
+const sequelize = new Sequelize("eshow-website", "root", "root", {
+    host: "132.232.55.204",
     dialect: "mysql",
     operatorsAliases: operatorsAliases,
     dialectOptions: {
